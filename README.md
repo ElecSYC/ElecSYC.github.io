@@ -26,30 +26,4 @@ _Si estás buscando a alguien para tu equipo de desarrollo frontend, no dudes en
     </body>
     </html>
 
-<head>
-<meta  charset="UTF-8"
-<meta  http-equiv="X-UA-Compatible"  content="IE=edge">
-<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
-</body>
-</html>
-
-
-<html  lang="en">
-
-<head>
-
-<meta  charset="UTF-8">
-
-<meta  http-equiv="X-UA-Compatible"  content="IE=edge">
-
-<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
-</body>
-</html>
-
 ![enter image description here](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) ![enter image description here](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white) ![enter image description here](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![enter image description here](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
