@@ -12,31 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 
-#splash_screen {
-    position: fixed;
+#particles {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    bottom: 0;
 }
 
 /* SECCION INICIO */
@@ -131,6 +111,7 @@ html {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    color: #fff;
 }
 
 #inicio .contenido .presentacion h2 {
@@ -176,28 +157,6 @@ html {
     display: none;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /* SECCION SOBRE MI */
 
 #sobremi {
@@ -206,6 +165,7 @@ html {
     padding: 100px 15px;
     color: black;
     display: flex;
+    background-color: #010d23;
 }
 
 #sobremi .contenedor-foto {
@@ -217,7 +177,7 @@ html {
     padding: 20px;
     width: 100%;
     border-radius: 20px;
-    background-color: white;
+    background-color: #010d23;
 }
 
 #sobremi .sobremi {
@@ -443,14 +403,14 @@ html {
 /* SECCION PORTAFOLIO */
 
 #portafolio {
-    max-width: 1100px;
     padding: 100px 0;
     margin: auto;
 }
 
 #portafolio .titulo-seccion {
     text-align: center;
-    font-size: 22px;
+    margin-bottom: 100px;
+    font-size: 25px;
     text-transform: uppercase;
     color: black;
     text-decoration: underline;
@@ -459,25 +419,32 @@ html {
 }
 
 #portafolio .fila {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 133px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #portafolio .fila .proyecto {
-    max-width: 450px;
-    border: 1px solid #d3d3d3;
-    margin: 0 10px;
-    position: relative;
-    overflow: hidden;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    grid-column: span 2;
+    height: 283px;
 }
 
+#portafolio .fila .proyecto:first-of-type {
+    grid-column: 2 / span 2;
+}
 
 #portafolio .fila .proyecto img {
     width: 100%;
     height: 100%;
-    filter: grayscale(1);
     object-fit: cover;
+    filter: grayscale(1);
     transition: .5s;
 }
 
