@@ -12,12 +12,20 @@
 <body>
     <div id="particles"></div>
     <!-- SECCION INICIO -->
-    <section id="inicio" class="animate_animated animate_fadeInUp">
+    <section id="inicio">
         <div class="contenido">
             <header>
                 <div class="contenido-header">
+                    <div class="darkmode">
+                        <label>
+                            <input type="checkbox" onclick="changeBackground()">
+                            <ion-icon name="moon" class="moon"></ion-icon>
+                            <ion-icon name="sunny" class="sun"></ion-icon>
+                            <span class="toggle"></span>
+                        </label>
+                    </div>
                     <div class="logo">
-                        <img src="/public/src/img/favicon.png" alt="logo">
+                        <img src="/public/src/img/favicon.png" alt="logo" class="moon">
                         <h1>ElecSYC</h1>
                     </div>
                     <nav id="nav" class="">
@@ -35,15 +43,14 @@
                     </div>
                     <!-- Iconos del menu responsive -->
                     <div class="redes">
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://github.com/ElecSYC" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/josesantiagobenavides/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord fa-bounce"></i></a>
+                        <a href="https://github.com/ElecSYC" target="_blank"><i class="fa-brands fa-github fa-bounce"></i></a>
+                        <a href="https://www.linkedin.com/in/josesantiagobenavides/" target="_blank"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
                     </div>
                 </div>
             </header>
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Jose Benavides</span>, Desarrollador Frontend</h2>
                 <p class="descripcion">Soy un desarrollador frontend con experiencia en el desarrollo de aplicaciones web y móviles Utilizo tecnologías como HTML, CSS, y Javascript, y estoy familiarizado con Node.js, Next.js, React, Redux y Flutter, así como lenguajes como Dart. También tengo experiencia en bases de datos NoSQL y SQL Lite. Hago enfasis en el diseño de interfaces de usuario (UI) y la experiencia de usuario (UX), y estoy dispuesto para trabajar en proyectos y colaborar en equipo.</p>
                 <a href="#portafolio">Ir al Portafolio</a>
             </div>
@@ -51,23 +58,25 @@
     </section>
 
     <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="animate_animated animate_fadeInUp">
-        <div class="contenedor-foto">
-            <img src="/public/src/img/favicon.png" alt="">
-        </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">Sobre mi</p>
-            <h2>Hola, soy <span>Jose Benavides</span></h2>
-            <h3>Desarrollador Frontend</h3>
-            <p>Un ingeniero de sistemas e informática con 2 años de experiencia en desarrollo frontend. Me apasiona el mundo digital y la tecnología, y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.</p>
-            <p>También soy un apasionado del trabajo en equipo y de la colaboración, y disfruto mucho compartiendo conocimientos y aprendiendo de mis compañeros. Soy una persona proactiva, responsable y comprometida con los objetivos de la empresa, siempre buscando formas de optimizar procesos y mejorar la calidad del trabajo.</p>
-            <p>Si estás buscando a alguien para tu equipo de desarrollo frontend, no dudes en ponerte en contacto conmigo. Estoy emocionado de poder aportar mi experiencia y habilidades para ayudar a tu empresa a alcanzar sus metas y objetivos.</p>
-            <a href="/public/src/assets/JoseBenavides_CV.pdf" target="_blank"><i class="fa-solid fa-download"></i>Descargar CV</a>
+    <section id="sobremi">
+        <div class="contenedor-sobremi">
+            <div class="contenedor-foto">
+                <img src="/public/src/img/favicon.png" alt="">
+            </div>
+            <div class="sobremi">
+                <h3 class="titulo-seccion">SOBRE MI</h3>
+                <h2>Hola, soy <span>Jose Benavides</span></h2>
+                <h3>Desarrollador Frontend</h3>
+                <p>Un ingeniero de sistemas e informática con 2 años de experiencia en desarrollo frontend. Me apasiona el mundo digital y la tecnología, y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.</p>
+                <p>También soy un apasionado del trabajo en equipo y de la colaboración, y disfruto mucho compartiendo conocimientos y aprendiendo de mis compañeros. Soy una persona proactiva, responsable y comprometida con los objetivos de la empresa, siempre buscando formas de optimizar procesos y mejorar la calidad del trabajo.</p>
+                <p>Si estás buscando a alguien para tu equipo de desarrollo frontend, no dudes en ponerte en contacto conmigo. Estoy emocionado de poder aportar mi experiencia y habilidades para ayudar a tu empresa a alcanzar sus metas y objetivos.</p>
+                <a href="/public/src/assets/JoseBenavides_CV.pdf" target="_blank"><i class="fa-solid fa-download fa-fade"></i>Descargar CV</a>
+            </div>
         </div>
     </section>
 
     <!-- SECCION SERVICIOS -->
-    <section id="servicios" class="animate_animated animate_fadeInUp">
+    <section id="servicios">
         <h3 class="titulo-seccion">MIS SERVICIOS</h3>
         <div class="fila">
             <div class="servicio">
@@ -76,32 +85,32 @@
                 <ul class="servicios-tag">
                     <li>Despliegue</li>
                     <li>Estructura</li>
-                    <li>Diseño de UX/UI</li>
+                    <li>UX/UI</li>
                 </ul>
                 <br>
-                <p>La experiencia de usuario es fundamental en cualquier aplicación web, se debe tener en cuenta cómo los usuarios interactuarán con la interfaz de usuario. Asi como, hacer uso de las mejores prácticas de SEO, como la optimización de títulos y meta descripciones, el uso de etiquetas de encabezado y la optimización de imágenes y otros recursos multimedia. </p>
+                <p>La experiencia de usuario es fundamental en cualquier aplicación web, tener en cuenta cómo los usuarios interactuarán con la interfaz de usuario. Asi como, las mejores prácticas de SEO, como la optimización de títulos y la optimización de imágenes y otros recursos multimedia.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-mobile"></i></span>
                 <h4>Desarrollo Movil</h4>
                 <ul class="servicios-tag">
-                    <li>Disponibilidad</li>
+                    <li>Escalabilidad</li>
                     <li>Multiplataforma</li>
-                    <li>Diseño de UX/UI</li>
+                    <li>UX/UI</li>
                 </ul>
                 <br>
-                <p>Las aplicaciones móviles se ejecutan en dispositivos con diferentes tamaños de pantalla y resoluciones. Por lo tanto, es importante que el diseño sea responsivo y el rendimiento de la aplicación, que es importante para proporcionar una buena experiencia de usuario. Como tambien, como se ejecutan en diferentes plataformas móviles, tales como Android y iOS. Cada plataforma tiene su propio conjunto de características y requisitos de diseño, </p>
+                <p>En las aplicaciones móviles el tamaño de pantalla y resoluciones, como tambien, el diseño responsive y el rendimiento de la aplicación; Es importante para proporcionar una buena experiencia de usuario. Asi como, se ejecutan tanto en Android y iOS. Cada plataforma tiene su propio conjunto de características y requisitos de diseño.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-database"></i></span>
                 <h4>DataBase & API</h4>
                 <ul class="servicios-tag">
                     <li>NoSQL/SQL</li>
-                    <li>API/CMS</li>
-                    <li>Frameworks</li>
+                    <li>REST API</li>
+                    <li>BigData</li>
                 </ul>
                 <br>
-                <p>Son herramientas útiles que ayudan a acelerar el desarrollo de la aplicación. Al trabajar con una API, es importante el cómo se comunica con la aplicación, qué tipo de datos puedes obtener, cómo se autentica y cómo se gestionan los errores. Como tambien, cómo se accede y se manipula la información almacenada, cómo se garantiza la seguridad y la integridad de los datos</p>
+                <p>Metodos útiles que ayudan a acelerar el desarrollo de la aplicación. Al trabajar con una API, la comunicacion con la aplicación, qué tipo de datos puedes obtener, cómo se autentica y cómo se gestionan los errores. Como tambien, cómo se accede y se manipula la información almacenada, cómo se garantiza la seguridad y la integridad de los datos.</p>
             </div>
         </div>
         <div class="fila">
@@ -111,21 +120,21 @@
                 <ul class="servicios-tag">
                     <li>Accesabilidad</li>
                     <li>Optimizacion</li>
-                    <li>Mantenebilidad</li>
+                    <li>Code Review</li>
                 </ul>
                 <br>
-                <p>Es importante para garantizar que todas las personas, independientemente de sus habilidades o discapacidades, puedan acceder a la información y las funcionalidades de una aplicación web, asi mismo como el rendimiento es esencial para garantizar que la aplicación web se cargue rápidamente y proporcione una buena experiencia de usuario. </p>
+                <p>La optimizacion del codigo y la revision del mismo son importantes, el rendimiento, como tambien la mantenibilidad y fiabilidad pueden verse afectadas bajo un buen proceso y equipo de respaldo que velan por la seguridad y escalabilidad del proyecto.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-compass-drafting"></i></span>
                 <h4>UX / UI Design</h4>
                 <ul class="servicios-tag">
-                    <li>Diseño GUI</li>
-                    <li>User Adaption</li>
-                    <li>Responsive</li>
+                    <li>User Research</li>
+                    <li>UX/UI Design</li>
+                    <li>Product Manager</li>
                 </ul>
                 <br>
-                <p>Es importante tener en cuenta las necesidades y expectativas de los usuarios al diseñar la experiencia y la interfaz de usuario, es esencial para que sea atractiva y coherente. como tambien que esta se visualice en todos los dispositivos y tamaños de pantalla. </p>
+                <p>Es importante tener en cuenta las necesidades y expectativas de los usuarios al diseñar la experiencia y la interfaz de usuario, es esencial para que sea atractiva y coherente. como tambien que esta se visualice en todos los dispositivos y tamaños de pantalla.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-brands fa-docker"></i></span>
@@ -136,7 +145,7 @@
                     <li>Seguridad</li>
                 </ul>
                 <br>
-                <p>Es importante la arquitectura en la nube, incluyendo servicios y soluciones de infraestructura de nube pública, conocimientos sobre herramientas de automatización y ser capaces de automatizar tareas, asi mismo, como la seguridad para proteger los datos y aplicaciones en la nube </p>
+                <p>La arquitectura en la nube, incluyendo servicios y soluciones de infraestructura de nube pública, conocimientos sobre herramientas de automatización y automatizar tareas, asi mismo, como la seguridad para proteger los datos y aplicaciones en la nube.</p>
             </div>
         </div>
     </section>
@@ -187,7 +196,7 @@
     </div>
 
     <!-- SECCION PORTAFOLIO -->
-    <section id="portafolio" class="animate_animated animate_fadeInUp">
+    <section id="portafolio">
         <h3 class="titulo-seccion">MIS PROYECTOS</h3>
         <div class="fila">
             <div class="proyecto">
@@ -196,6 +205,8 @@
                 <div class="info">
                     <h4>Weather Web App</h4>
                     <p>Aplicativo Web</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
             <div class="proyecto">
@@ -204,6 +215,8 @@
                 <div class="info">
                     <h4>To Do Web App</h4>
                     <p>Aplicativo Web</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
             <div class="proyecto">
@@ -212,6 +225,8 @@
                 <div class="info">
                     <h4>Ecommerce Web App</h4>
                     <p>Aplicativo Web</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
             <div class="proyecto">
@@ -220,6 +235,8 @@
                 <div class="info">
                     <h4>ChatGPT API App</h4>
                     <p>Desarrollo Movil</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
             <div class="proyecto">
@@ -228,6 +245,8 @@
                 <div class="info">
                     <h4>Social Message App</h4>
                     <p>Desarrollo Movil</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
             <div class="proyecto">
@@ -236,6 +255,8 @@
                 <div class="info">
                     <h4>IFood App</h4>
                     <p>Desarrollo Movil</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
             <div class="proyecto">
@@ -244,25 +265,27 @@
                 <div class="info">
                     <h4>WebSaleCatcher</h4>
                     <p>Diseño UX/UI</p>
+                    <a href=""><i class="fa-solid fa-images"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github fa-beat"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECCION CONTACTO -->
-    <section id="contacto" class="animate_animated animate_fadeInUp">
+    <section id="contacto">
         <h3 class="titulo-seccion">Contactame</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form>
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                    <input type="text" class="input-mitad" placeholder="Nombre Completo" required="required">
+                    <input type="text" class="input-mitad" placeholder="Correo Electronico" required="required">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Asunto" class="input-full">
+                    <input type="text" class="input-full" placeholder="Asunto" required="required">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Comentario..." class="input-full"></textarea>
+                    <textarea cols="30" rows="10" class="input-full" placeholder="Contenido" required="required"></textarea>
                 </div>
                 <input type="submit" value="Enviar mensaje" class="btn-enviar">
             </form>
@@ -284,5 +307,7 @@
     <script src="/public/src/js/emailform.js"></script>
     <script src="/public/src/js/particles.min.js"></script>
     <script src="/public/src/js/particlesjs-config.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body> 
 </html>
