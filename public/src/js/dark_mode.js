@@ -2,7 +2,7 @@ window.onload = function() {
     let div = document.getElementById("inicio");
     div.style.backgroundImage = 'linear-gradient(to bottom, rgba(0,0,0, .7), rgba(0,0,0, .7) 100%), url(' + images[0] + ')';
 }
-let images = ['/public/src/img/background.jpg', '/public/src/img/background_darkmode.jpg'];
+let images = ['/public/src/img/background.webp', '/public/src/img/background_darkmode.webp'];
 let currentIndex = 0;
 
 function changeBackground() {
