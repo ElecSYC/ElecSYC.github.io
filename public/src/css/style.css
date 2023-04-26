@@ -90,11 +90,11 @@ html {
 }
 
 #inicio .contenido header .contenido-header .redes a:hover {
-    color: rgba(66, 37, 242, 0.8); 
+    color: #03bcf4; 
 }
 
 #inicio .contenido header .contenido-header .seleccionado{
-    color: rgba(66, 37, 242, 0.8);
+    color: #03bcf4;
 }
 
 #inicio .contenido .presentacion {
@@ -138,7 +138,7 @@ html {
 }
 
 #inicio .contenido .presentacion a:hover {
-    background-color: rgba(66, 37, 242, 0.8);
+    background-color: #03bcf4;
     color: #fff;
 }
 
@@ -298,7 +298,7 @@ html {
     text-decoration: none;
     display: inline-block;
     padding: 20px 25px;
-    border: 1px solid #fff;
+    border: 1px solid #027192;
     border-radius: 30px;
     color: #fff;
     text-transform: uppercase;
@@ -310,7 +310,7 @@ html {
 }
 
 #sobremi .contenedor-sobremi .sobremi a:hover {
-    background-color: rgba(66, 37, 242, 0.8);
+    background-color: #0284ab;
     color: #fff;
 }
 
@@ -333,7 +333,7 @@ html {
     text-align: center;
     line-height: 0.70em;
     outline: none;
-    animation: animate 5s linear infinite;
+    animation: animate 6s linear infinite;
 }
 
 @keyframes animate
@@ -407,7 +407,7 @@ html {
 
 
 #servicios .fila .servicio:hover {
-    box-shadow: 5px 5px 10px #cccfd3, -5px -5px 10px #999ea7;
+    box-shadow: 5px 5px 10px #0284ab, -5px -5px 10px #0296c3;
 }
 
 #servicios .fila .servicio .icono {
@@ -531,11 +531,11 @@ html {
     grid-auto-rows: 250px;
     grid-template-areas: 
     "img1 img1 img2 img3"
-    "img1 img1 img4 img4"
-    "img7 img5 img4 img4"
-    "img6 img5 img8 img8"
-    "img9 img9 img10 img11"
-    "img9 img9 img12 img12";
+    "img1 img1 img5 img4"
+    "img6 img7 img5 img4"
+    "img6 img8 img8 img9"
+    "img10 img10 img11 img12"
+    "img10 img10 img11 img12";
     gap: .8em;
 }
 
@@ -548,28 +548,6 @@ html {
 
 #portafolio .fila .galeria-seccion .gallery_picture {
     position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-#portafolio .fila .galeria-seccion .gallery_picture::before {
-    content: "Hola Mundo";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-    transform: translate(100%);
-    transition: transform .4s;
-}
-
-#portafolio .fila .galeria-seccion .gallery_picture:hover::before {
-    transform: translate(0);
 }
 
 #portafolio .fila .galeria-seccion .gallery_picture--g1 {
@@ -604,6 +582,22 @@ html {
     grid-area: img8;
 }
 
+#portafolio .fila .galeria-seccion .gallery_picture--g9 {
+    grid-area: img9;
+}
+
+#portafolio .fila .galeria-seccion .gallery_picture--g10 {
+    grid-area: img10;
+}
+
+#portafolio .fila .galeria-seccion .gallery_picture--g11 {
+    grid-area: img11;
+}
+
+#portafolio .fila .galeria-seccion .gallery_picture--g12 {
+    grid-area: img12;
+}
+
 /* SECCION DE PROYECTOS */
 
 #proyectos {
@@ -625,6 +619,7 @@ html {
     outline: none;
     animation: animate 5s linear infinite;
 }
+
 
 @keyframes animate
 {
@@ -661,10 +656,9 @@ html {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     grid-column: span 2;
     height: 283px;
-}
-
-#proyectos .fila .proyecto:first-of-type {
-    grid-column: 2 / span 2;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
 #proyectos .fila .proyecto img {
@@ -674,22 +668,28 @@ html {
     transition: .5s;
 }
 
-#proyectos .fila .proyecto .info {
+#proyectos .fila .proyecto::before {
+    content: "Hola Mundo";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    background-color: #000;
+    right: 0;
     color: #fff;
-    width: 100%;
-    padding: 10px;
-    opacity: 0;
-    bottom: -40px;
-    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #027192;
+    transform: translate(100%);
+    transition: transform .4s;
 }
 
-#proyectos .fila .proyecto:hover .info {
-    opacity: 1;
-    bottom: 0;
+#proyectos .fila .proyecto:hover::before {
+    transform: translate(0);
+}
+
+#proyectos .fila .proyecto:first-of-type {
+    grid-column: 2 / span 2;
 }
 
 /* SECCION CONTACTO */ 
@@ -697,7 +697,6 @@ html {
 #contacto {
     padding: 100px 15px;
     background-color: #1a2539;
-
 }
 
 #contacto .titulo-seccion {
